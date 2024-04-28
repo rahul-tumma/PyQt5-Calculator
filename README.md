@@ -41,4 +41,4 @@ This is a simple calculator application built using PyQt5, a set of Python bindi
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
-- Powered by [Rahul Tumma](https://github.com/rahultumma)
+- Powered by [Rahul Tumma](https://github.com/rahul-tumma)
