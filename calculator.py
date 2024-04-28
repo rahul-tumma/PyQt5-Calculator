@@ -150,10 +150,15 @@ class Calculator(QWidget):
         self.result_display.setText(str(self.grand_total))
 
     def memory_operation(self, op):
+        try:
+            value = float(self.result_display.text())
+        except ValueError:
+            value = 0.0
+
         if op == 'M+':
-            self.memory_register += float(self.result_display.text())
+            self.memory_register += value
         elif op == 'M-':
-            self.memory_register -= float(self.result_display.text())
+            self.memory_register -= value
         elif op == 'MR':
             self.result_display.setText(str(self.memory_register))
         elif op == 'MC':
